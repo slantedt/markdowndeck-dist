@@ -1,0 +1,54 @@
+site_name: MarkdownDeck
+site_description: Turn one Markdown file into a native-macOS presentation with beautiful PDF export.
+site_url: https://slantedt.github.io/markdowndeck-dist/
+repo_url: https://github.com/slantedt/markdowndeck-dist
+edit_uri: ""
+docs_dir: docs
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+plugins:
+  - search
+  - callouts
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+
+nav:
+  - Getting started: 01-getting-started.md
+  - Authoring a deck: 02-authoring.md
+  - Slide layouts: 03-layouts.md
+  - Content blocks: 04-content-blocks.md
+  - Themes: 05-themes.md
+  - PDF & image export: 06-pdf-export.md
+  - The visual editor: 07-visual-editor.md
+  - CLI reference: 08-cli-reference.md
+  - Using with Claude: 09-using-with-claude.md
