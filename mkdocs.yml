@@ -43,6 +43,7 @@ markdown_extensions:
   - pymdownx.superfences
 
 nav:
+  - Home: index.md
   - Getting started: 01-getting-started.md
   - Authoring a deck: 02-authoring.md
   - Slide layouts: 03-layouts.md
