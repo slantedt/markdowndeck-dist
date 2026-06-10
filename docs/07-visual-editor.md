@@ -52,6 +52,8 @@ Below the layout picker, the inspector has an **add-content grid**: ten labelled
 
 Inserted blocks are plain Markdown — the same thing you'd type by hand — so they stay editable in the source and round-trip cleanly. See [`./04-content-blocks.md`](./04-content-blocks.md) for what each block type renders to.
 
+The inserted `::: columns` scaffold is for a quick *even* split. To place content into the **named** columns of a multi-column layout — `left`/`right` on `two-cols`, or `image`/`text` on `image-left`/`image-right` — wrap it in a `::: cell <name>` block instead. See [`./03-layouts.md`](./03-layouts.md#placing-content-into-columns-with-cells).
+
 > [!NOTE]
 > The inserted Image snippet uses a placeholder path. Replace it with an absolute path or an `https://` URL — bare deck-relative paths like `pic.png` do not resolve on `main`. See the image note in [`./02-authoring.md`](./02-authoring.md).
 

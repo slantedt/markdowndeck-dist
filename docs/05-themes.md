@@ -95,7 +95,7 @@ Per-slide and content selectors:
 
 - `.slide`, `.slide.active`, `.slide.overflow`
 - `.slide.layout-<layout>` — e.g. `.slide.layout-cover`, `.slide.layout-two-cols`
-- `.slide .content`, `.slide .columns`, `.slide .column`
+- `.slide .content`, `.slide .columns`, `.slide .column`, `.slide .cell` — `.cell` is the element a `::: cell <name>` block renders to (see [Slide layouts](./03-layouts.md))
 - Headings, `p`, `a`, `li`, `ul`, `ol`
 - `code`, `pre`, `pre code`
 - `table`, `th`, `td`, `thead th`

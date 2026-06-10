@@ -43,7 +43,7 @@ mddeck export talk.md --json
 > [!NOTE]
 > Front-matter keys still apply to headless exports: `notes_appendix` (on by default), `overflow_badges`, `page_numbers`, `header`, and `footer`. See [./06-pdf-export.md](./06-pdf-export.md) for what ends up in the PDF.
 
-With `--json`, the result is printed to stdout (schema `mddeck-export/v1`). `scaled_slides` lists the indices of slides that were auto-shrunk to fit, which makes it useful as a CI overflow gate:
+With `--json`, the result is printed to stdout (schema `mddeck-export/v1`). `scaled_slides` lists the indices of slides that were auto-shrunk to fit, which makes it useful as a CI overflow gate. The `warnings` array carries non-fatal authoring diagnostics — for example a `::: cell` whose name matches no column on its slide (it auto-flows into the next free column instead), or a malformed `<!-- grid: … -->` spec (ignored, falling back to the layout preset). See [./03-layouts.md](./03-layouts.md) for the named-column and grid model these warnings come from:
 
 ```json
 {

@@ -108,5 +108,6 @@ In an exported PDF the badge is hidden by default. To keep it visible in the PDF
 
 ## Where to next
 
+- [Slide layouts](./03-layouts.md) — how to place any of these blocks into a named column with a `::: cell` div, or into a `::: columns` even split.
 - [Themes](./05-themes.md) — the selectors that color admonitions, tables, charts, and code.
 - [PDF & image export](./06-pdf-export.md) — the `overflow_badges` key and what else lands in the PDF.
